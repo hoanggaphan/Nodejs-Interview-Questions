@@ -64,6 +64,9 @@ Có hai loại API function trong Node.js:
 |--|--|
 | **Asynchronous** nghĩa là không đồng bộ. Chúng có thể thực hiện các yêu cầu HTTP không đồng bộ mà không cần đợi server phản hồi. Các chức năng này tiếp tục phản hồi yêu cầu mà nó đã nhận được phản hồi từ server. | Các chức năng Non-blocking được sử dụng liên quan đến các hoạt động I/O. Chúng ngay lập tức phản hồi với bất kỳ dữ liệu nào có sẵn và tiếp tục chạy theo yêu cầu. Trong trường hợp không thể truy xuất bất kỳ câu trả lời nào thì API sẽ trả về ngay lập tức kèm theo lỗi. |
 
+**10. What is package.json?**\
+Tệp **package.json** trong Node.js là trung tâm của toàn bộ ứng dụng. Nó chứa siêu dữ liệu liên quan đến dự án và nó được sử dụng để quản lý các phần dependencies, script, version của dự án và nhiều hơn nữa.
+![enter image description here](https://cdn1.bbcode0.com/uploads/2021/1/16/3cc5a5ddcee867d46f1240ce79bee143-full.png)
 
 <a id="moderate"></a>
 ## Moderate Level
