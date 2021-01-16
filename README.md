@@ -54,7 +54,7 @@ Node.js có thể được sử dụng để phát triển:
 + Hệ thống phân phối
 + Ứng dụng mục đích chung
 
-**8. How many types of API functions are there in Node.js?**
+**8. How many types of API functions are there in Node.js?**\
 Có hai loại API function trong Node.js:
 + Không đồng bộ, chức năng không chặn.
 + Đồng bộ, chức năng chặn.
