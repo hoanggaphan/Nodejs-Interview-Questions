@@ -68,6 +68,20 @@ Có hai loại API function trong Node.js:
 Tệp **package.json** trong Node.js là trung tâm của toàn bộ ứng dụng. Nó chứa siêu dữ liệu liên quan đến dự án và nó được sử dụng để quản lý các phần dependencies, script, version của dự án và nhiều hơn nữa.
 ![enter image description here](https://cdn1.bbcode0.com/uploads/2021/1/16/3cc5a5ddcee867d46f1240ce79bee143-full.png)
 
+**11. What do you understand by Event-driven programming?**\
+Event-driven programming (lập trình theo hướng sự kiện) là một cách tiếp cận lập trình sử dụng nhiều sự kiện để kích hoạt các chức năng khác nhau. Một sự kiện có thể là bất cứ thứ gì như nhấp chuột, nhấn phím, v.v. Khi một sự kiện xảy ra, một callback function đã được đăng ký với phần tử được thực thi. Cách tiếp cận này chủ yếu tuân theo mẫu publish-subscribe. Do lập trình theo hướng sự kiện, Node.js nhanh hơn khi so sánh với các công nghệ khác.
+
+**12. What is an  _Event loop_  in Node.js and how does it work?**\
+**Event loop (vòng lặp sự kiện)** trong Node.js xử lý tất cả các callback không đồng bộ trong một ứng dụng. Đây là một trong những khía cạnh quan trọng nhất của Node.js và lý do đằng sau Node.js có I/O không chặn. Vì Node.js là một ngôn ngữ hướng sự kiện, bạn có thể dễ dàng đính kèm một trình lắng nghe vào một sự kiện và sau đó khi sự kiện xảy ra, callback sẽ được thực thi bởi trình nghe cụ thể. Bất cứ khi nào các hàm như setTimeout, http.get và fs.readFile được gọi, Node.js sẽ thực thi **vòng lặp sự kiện (event loop)** và sau đó tiếp tục với mã tiếp theo mà không cần đợi kết quả. Khi toàn bộ hoạt động kết thúc, Node.js nhận đầu ra và sau đó thực hiện callback function. Đây là lý do tại sao tất cả các callback function được đặt trong một hàng đợi trong một vòng lặp. Khi phản hồi được nhận, chúng sẽ được thực thi từng cái một.
+![](https://cdn1.bbcode0.com/uploads/2021/1/16/061e28385a33c44545257ffb4f67dc14-full.png)
+
+**13. Explain REPL in the context of Node.js.**
+REPL trong Node.js là viết tắt của Read, Eval, Print và Loop. Nó đại diện cho một môi trường máy tính như window console hoặc Unix/Linux shell nơi bất kỳ lệnh nào có thể được nhập vào và sau đó hệ thống có thể phản hồi với một đầu ra. Node.js đi kèm với môi trường REPL theo mặc định. REPL có thể thực hiện các tác vụ được liệt kê dưới đây:
++ **Read:**  Đọc thông tin đầu vào của người dùng, phân tích cú pháp thành cấu trúc dữ liệu JavaScript và sau đó lưu trữ trong bộ nhớ.
++ **Eval:**  Nhận và đánh giá cấu trúc dữ liệu.
++ **Print:** In kết quả cuối cùng.
++ **Loop:**  Lặp lại lệnh được cung cấp cho đến khi _CTRL + C_ được nhấn hai lần.
+
 <a id="moderate"></a>
 ## Moderate Level
 
