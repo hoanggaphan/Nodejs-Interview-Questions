@@ -75,12 +75,23 @@ Event-driven programming (lập trình theo hướng sự kiện) là một các
 **Event loop (vòng lặp sự kiện)** trong Node.js xử lý tất cả các callback không đồng bộ trong một ứng dụng. Đây là một trong những khía cạnh quan trọng nhất của Node.js và lý do đằng sau Node.js có I/O không chặn. Vì Node.js là một ngôn ngữ hướng sự kiện, bạn có thể dễ dàng đính kèm một trình lắng nghe vào một sự kiện và sau đó khi sự kiện xảy ra, callback sẽ được thực thi bởi trình nghe cụ thể. Bất cứ khi nào các hàm như setTimeout, http.get và fs.readFile được gọi, Node.js sẽ thực thi **vòng lặp sự kiện (event loop)** và sau đó tiếp tục với mã tiếp theo mà không cần đợi kết quả. Khi toàn bộ hoạt động kết thúc, Node.js nhận đầu ra và sau đó thực hiện callback function. Đây là lý do tại sao tất cả các callback function được đặt trong một hàng đợi trong một vòng lặp. Khi phản hồi được nhận, chúng sẽ được thực thi từng cái một.
 ![](https://cdn1.bbcode0.com/uploads/2021/1/16/061e28385a33c44545257ffb4f67dc14-full.png)
 
-**13. Explain REPL in the context of Node.js.**\
+**13. Explain REPL in the context of Node.js.**
 REPL trong Node.js là viết tắt của Read, Eval, Print và Loop. Nó đại diện cho một môi trường máy tính như window console hoặc Unix/Linux shell nơi bất kỳ lệnh nào có thể được nhập vào và sau đó hệ thống có thể phản hồi với một đầu ra. Node.js đi kèm với môi trường REPL theo mặc định. REPL có thể thực hiện các tác vụ được liệt kê dưới đây:
 + **Read:**  Đọc thông tin đầu vào của người dùng, phân tích cú pháp thành cấu trúc dữ liệu JavaScript và sau đó lưu trữ trong bộ nhớ.
 + **Eval:**  Nhận và đánh giá cấu trúc dữ liệu.
 + **Print:** In kết quả cuối cùng.
 + **Loop:**  Lặp lại lệnh được cung cấp cho đến khi _CTRL + C_ được nhấn hai lần.
+
+**14. List down the tasks which should be done asynchronously using the event loop?**
++ Hoạt động I/O
++ Tính toán nặng
++ Bất cứ điều gì yêu cầu blocking
+
+**15. List down the steps using which “Control Flow” controls the function calls in Node.js?**
+1.  Kiểm soát thứ tự thực hiện
+2.  Thu thập dữ liệu
+3.  Giới hạn đồng thời
+4.  Gọi bước tiếp theo trong chương trình
 
 <a id="moderate"></a>
 ## Moderate Level
