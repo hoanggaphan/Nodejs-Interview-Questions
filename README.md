@@ -54,10 +54,15 @@ Node.js có thể được sử dụng để phát triển:
 + Hệ thống phân phối
 + Ứng dụng mục đích chung
 
-**8. How many types of API functions are there in Node.js?**\
+**8. How many types of API functions are there in Node.js?**
 Có hai loại API function trong Node.js:
 + Không đồng bộ, chức năng không chặn.
 + Đồng bộ, chức năng chặn.
+
+**9. What is the difference between Asynchronous and Non-blocking?**
+| Asynchronous | Non-blocking |
+|--|--|
+| **Asynchronous** nghĩa là không đồng bộ. Chúng có thể thực hiện các yêu cầu HTTP không đồng bộ mà không cần đợi server phản hồi. Các chức năng này tiếp tục phản hồi yêu cầu mà nó đã nhận được phản hồi từ server. | Các chức năng Non-blocking được sử dụng liên quan đến các hoạt động I/O. Chúng ngay lập tức phản hồi với bất kỳ dữ liệu nào có sẵn và tiếp tục chạy theo yêu cầu. Trong trường hợp không thể truy xuất bất kỳ câu trả lời nào thì API sẽ trả về ngay lập tức kèm theo lỗi. |
 
 
 <a id="moderate"></a>
