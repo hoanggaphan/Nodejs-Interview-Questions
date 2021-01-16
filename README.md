@@ -41,6 +41,25 @@ Node.js là một framework mạnh mẽ được phát triển trên công cụ 
 | 6. Hữu ích trong việc tách một ứng dụng thành các MVC components | 6. Hữu ích trong việc tạo truy vấn cơ sở dữ liệu |
 | 7. Thích hợp để phát triển các ứng dụng thời real-time | 7. Thích hợp trong các tình huống cần một thứ gì đó nhanh hơn và có thể mở rộng hơn |
 
+**5. Why Node.js is single threaded?**\
+Node.js sử dụng một mô hình luồng đơn để hỗ trợ xử lý không đồng bộ. Với xử lý không đồng bộ, ứng dụng có thể hoạt động tốt hơn và có khả năng mở rộng cao hơn khi tải web. Do đó, Node.js sử dụng cách tiếp cận mô hình đơn luồng thay vì triển khai dựa trên luồng điển hình.
+
+**6. How do Node.js works?**\
+Node.js là một máy ảo sử dụng JavaScript làm ngôn ngữ kịch bản và chạy trên môi trường v8. Nó hoạt động trên một vòng lặp sự kiện đơn luồng và một I/O không chặn cung cấp tốc độ cao vì nó có thể xử lý số lượng yêu cầu đồng thời cao hơn. Ngoài ra, bằng cách sử dụng mô-đun ‘HTTP’, Node.js có thể chạy trên bất kỳ máy chủ web độc lập nào.
+
+**7. Where Node.js can be used?**\
+Node.js có thể được sử dụng để phát triển:
++ Ứng dụng Web thời gian thực
++ Ứng dụng mạng
++ Hệ thống phân phối
++ Ứng dụng mục đích chung
+
+**8. How many types of API functions are there in Node.js?**
+Có hai loại API function trong Node.js:
++ Không đồng bộ, chức năng không chặn.
++ Đồng bộ, chức năng chặn.
+
+
 <a id="moderate"></a>
 ## Moderate Level
 
